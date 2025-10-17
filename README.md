@@ -5,7 +5,7 @@ A front-end visualization project developed based on **PanJiaChen/vue-element-ad
 ---
 
 ## 🚀 Project Overview
-This project was commissioned by five logistics students from Chang'an University as part of their course design project. It was independently designed and developed by me according to their requirements, and used for the Logistics Design Competition demonstration.  
+This project was commissioned by five logistics students from Chang'an University as part of their course design project. It was independently designed and developed by Chenle Wang according to their requirements, and used for the Logistics Design Competition demonstration.  
 The system is a **pure front-end logistics resource scheduling platform**, which simulates enterprise-level logistics operations and resource management through data visualization and AMap integration. It includes modules for login, data dashboards, route planning, and management of parts, logistics, and staff information.
 
 ---
