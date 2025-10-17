@@ -1,99 +1,153 @@
-# vue-admin-template
+# Intelligent Logistics Resource Scheduling Platform
 
-English | [简体中文](./README-zh.md)
+A front-end visualization project developed based on **PanJiaChen/vue-element-admin** framework.
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
+---
 
-**Live demo:** http://panjiachen.github.io/vue-admin-template
+## 🚀 Project Overview
+This project was commissioned by five logistics students from Chang'an University as part of their course design project. It was independently designed and developed by me according to their requirements, and used for the Logistics Design Competition demonstration.  
+The system is a **pure front-end logistics resource scheduling platform**, which simulates enterprise-level logistics operations and resource management through data visualization and AMap integration. It includes modules for login, data dashboards, route planning, and management of parts, logistics, and staff information.
 
+---
 
-**The current version is `v4.0+` build on `vue-cli`. If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-admin-template/tree/tag/3.11.0), it does not rely on `vue-cli`**
+## 🧩 Module Overview
 
-<p align="center">
-  <b>SPONSORED BY</b>
-</p>
-<p align="center">
-   <a href="https://finclip.com?from=vue_element" title="FinClip" target="_blank">
-      <img height="200px" src="https://gitee.com/panjiachen/gitee-cdn/raw/master/vue%E8%B5%9E%E5%8A%A9.png" title="FinClip">
-   </a>
-</p>
+### Sidebar Navigation Structure
+The system includes the following main modules:
 
-## Build Setup
+| Module | Description |
+|-----------|-------------|
+| **Home** | Dashboard after login, displaying overall data overview and real-time charts |
+| **Logistics Demand Forecast** | Visualizes annual, quarterly, and monthly logistics demand trends (powered by ECharts) |
+| **Vehicle Logistics Scheduling** | Includes transport task management, capacity matching, and route planning (based on AMap API) |
+| **Parts Logistics Scheduling** | Independent visualization and management for parts logistics resources |
+| **Logistics Resource Management** | Provides CRUD functions for equipment information |
+| **User Information Management** | Manages user information and permissions |
+| **Staff Information Management** | Maintains employee records and modification features |
 
+---
+
+## 📊 System Demonstration
+
+### Login Page
+![login](images/login.png)
+
+### Dashboard
+![dashboard](images/dashboard.png)
+
+### Parts Logistics Scheduling
+![chart](images/scheduling.png)
+
+### Route Planning
+![route](images/amap.png)
+
+### Equipment Management
+![route](images/equipment.png)
+
+### User Management
+![route](images/user.png)
+
+---
+
+## 🏗️ Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Front-end Framework | Vue 2.x |
+| UI Library | Element UI |
+| Visualization | ECharts |
+| Map Service | AMap JavaScript API |
+| State Management | Vuex |
+| Routing | Vue Router |
+| HTTP Requests | Axios |
+| Build Tool | Vue CLI |
+| Base Template | vue-element-admin (by PanJiaChen) |
+
+---
+
+## 📂 Project Structure
+
+```
+vue-admin-template-master
+├── build/               # Build configuration
+├── dist/                # Production output
+├── mock/                # Mock data
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── api/             # API definitions
+│   ├── assets/          # Images and icons
+│   ├── components/      # Reusable components
+│   ├── layout/          # Page layout
+│   ├── router/          # Routing configuration
+│   ├── store/           # Vuex state management
+│   ├── views/           # Application pages
+│   ├── App.vue          # Root component
+│   └── main.js          # Entry point
+├── package.json         # Dependencies and scripts
+└── vue.config.js        # Vue CLI configuration
+```
+
+---
+
+## ⚙️ Installation and Startup
+
+### 1️⃣ Clone the Project
 ```bash
-# clone the project
-git clone https://github.com/PanJiaChen/vue-admin-template.git
+git clone https://github.com/ChenleWang123/Intelligent-Logistics-Platform.git
+cd Intelligent-Logistics-Platform/vue-admin-template-master
+```
 
-# enter the project directory
-cd vue-admin-template
-
-# install dependency
+### 2️⃣ Install Dependencies
+```bash
 npm install
+```
 
-# develop
+### 3️⃣ Run the Project
+```bash
 npm run dev
 ```
-
-This will automatically open http://localhost:9528
-
-## Build
-
-```bash
-# build for test environment
-npm run build:stage
-
-# build for production environment
-npm run build:prod
+Default access URL:
+```
+http://localhost:9528/
 ```
 
-## Advanced
-
+### 4️⃣ Build for Production
 ```bash
-# preview the release environment effect
-npm run preview
-
-# preview the release environment effect + static resource analysis
-npm run preview -- --report
-
-# code format check
-npm run lint
-
-# code format check and auto fix
-npm run lint -- --fix
+npm run build
 ```
 
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
+---
 
-## Demo
+## 🌐 Feature Description
 
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
+| Module | Description |
+|---------|-------------|
+| **Login Module** | Front-end only authentication (default: admin / 111111) |
+| **Data Visualization** | Dynamic bar and line charts powered by ECharts |
+| **Route Planning** | Uses AMap API for route visualization and planning |
+| **Equipment/Staff Management** | CRUD operations with simulated backend interaction |
+| **User Management** | Basic user information and query features |
 
-## Extra
+---
 
-If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
+## 💡 Highlights
 
-For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
+- **Pure Front-end Implementation**: Works without any backend dependency
+- **Visualization + Mapping Integration**: Combines logistics routes with data charts
+- **Modular Architecture**: Clean and extendable structure
+- **User-Friendly UI**: Built with Element UI components
+- **Academic-Grade Template**: Ideal for logistics or management-related graduation and design projects
 
-## Related Project
+---
 
-- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+## 📜 Acknowledgements
 
-- [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
+- [PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin): Excellent front-end architecture template
+- AMap Open Platform: Powerful map visualization and routing API
 
-- [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
+---
 
-- [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
+## 🪪 License
 
-## Browsers support
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
-
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen
+This project is released under the [MIT License](./LICENSE).  
+For educational and research purposes only. Commercial use without authorization is prohibited.
