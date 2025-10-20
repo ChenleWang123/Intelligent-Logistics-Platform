@@ -35,6 +35,9 @@ The system includes the following main modules:
 ### Dashboard
 ![dashboard](images/dashboard.png)
 
+### Demand Forecast
+![predict](images/predict.png)
+
 ### Parts Logistics Scheduling
 ![chart](images/scheduling.png)
 
